@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductosModel } from 'src/app/modelos/producto.model';
 
 @Component({
   selector: 'app-producto-home',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductoHomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pdtService: producto) { }
+
+  listaProductos: ProductosModel[] = []
 
   ngOnInit() {
   }
