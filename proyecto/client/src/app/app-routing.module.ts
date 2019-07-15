@@ -4,6 +4,7 @@ import { ProductosModule } from './modulos/productos/productos.module';
 import { ParametrosModule } from './modulos/parametros/parametros.module';
 import { HomeComponent } from './template/home/home.component';
 import { PageNotFoundComponent } from './template/page-not-found/page-not-found.component';
+import { UsuariosModule } from './modulos/usuarios/usuarios.module';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
     RouterModule.forRoot(routes),
     ParametrosModule,
     ProductosModule,
+    UsuariosModule
   ],
   exports: [RouterModule]
 })
