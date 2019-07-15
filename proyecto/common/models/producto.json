@@ -1,0 +1,44 @@
+{
+  "name": "producto",
+  "plural": "productos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "codigo": {
+      "type": "string",
+      "required": true
+    },
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "origen": {
+      "type": "string",
+      "required": true
+    },
+    "mayor": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    },
+    "imagen": {
+      "type": "string",
+      "required": true
+    },
+    "serial": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "descripcion": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
