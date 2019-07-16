@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Observable } from 'rxjs';
-import { ProductosModule } from '../modulos/productos/productos.module';
+import { ProductosModel } from '../modelos/producto.model';
 
 
 const base_url : string = 'http://localhost:3000/api/'
@@ -12,8 +12,8 @@ export class ProductoService {
 
   constructor(private http: HttpClient) { }
 
-  gelAllProducts(): Observable<ProductosModule[]>{
-    return this.http.get<ProductosModule[]>(`${base_url}productos`);
+  getAllProducts(): Observable<ProductosModel[]>{
+    return this.http.get<ProductosModel[]>(`${base_url}productos`);
 
   }
 }
