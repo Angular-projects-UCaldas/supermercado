@@ -1,0 +1,44 @@
+{
+    "name": "categoria",
+    "plural": "categorias",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "codigo": {
+        "type": "string",
+        "required": true
+      },
+      "nombre": {
+        "type": "string",
+        "required": true
+      },
+      "apellido": {
+        "type": "string",
+        "required": true
+      },
+      "fechanacimiento": {
+        "type": "date",
+        "required": true
+      },
+      "celular": {
+        "type": "string",
+        "required": true
+      },
+      "talla": {
+        "type": "number",
+        "required": true
+      },
+      "productos": {
+        "type": "string",
+        "required": false
+      }
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+  }
+  

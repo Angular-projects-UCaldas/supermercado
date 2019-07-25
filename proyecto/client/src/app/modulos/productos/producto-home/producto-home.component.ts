@@ -11,16 +11,16 @@ export class ProductoHomeComponent implements OnInit {
 
   constructor(private pdtService: ProductoService) { }
 
-  listaProductos: ProductosModel [] = [];
+  listaProductos: ProductosModel[] = [];
 
   ngOnInit() {
     this.getAllProducts();
   }
 
-  getAllProducts():void{
-this.pdtService.getAllProducts().subscribe(items => {
-  this.listaProductos = items;
-});
+  getAllProducts(): void {
+    this.pdtService.getAllProducts().subscribe(items => {
+      this.listaProductos = items;
+    });
   }
 
 }

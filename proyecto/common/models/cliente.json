@@ -32,9 +32,7 @@
       "required": true
     },
     "productos": {
-      "type": [
-        "string"
-      ],
+      "type": "string",
       "required": false
     }
   },

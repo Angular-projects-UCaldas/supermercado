@@ -1,1 +1,18 @@
-<p>producto-detalle works!</p>
+<div class="row s12">
+    <div class="card col s6">
+        <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="{{producto.imagen}}">
+        </div>
+        <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">{{producto.nombre}}<i
+                    class="material-icons right">more_vert</i></span>
+            <p><a routerLink="/producto/detalles">Detalles</a></p>
+        </div>
+        <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">{{producto.nombre}}<i
+                    class="material-icons right">close</i></span>
+            <p>{{producto.serial}}</p>
+            <p>Oferta: {{(producto.mayor) ? "Si" : "No"}}</p>
+        </div>
+    </div>
+</div>

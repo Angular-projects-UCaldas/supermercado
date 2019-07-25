@@ -1,1 +1,40 @@
-<p>lista-categoria works!</p>
+<table>
+    <thead>
+        <tr>
+            <th>
+                Codigo
+            </th>
+            <th>
+                Nombre
+            </th>
+            <th>
+                Productos
+            </th>
+            <th>
+
+            </th>
+            <th>
+
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ng for="let c of listaCategoria">
+            <td>
+                {{c.codigo}}
+            </td>
+            <td>
+                {{c.nombre}}
+            </td>
+            <td>
+                {{c.productos}}
+            </td>
+            <td>
+
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </tbody>
+</table>
