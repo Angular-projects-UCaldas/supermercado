@@ -42,5 +42,9 @@
   "cliente": {
     "dataSource": "db",
     "public": true
+  },
+  "categorias": {
+    "dataSource": "db",
+    "public": true
   }
 }

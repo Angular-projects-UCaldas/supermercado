@@ -1,44 +1,47 @@
 {
-    "name": "categoria",
-    "plural": "categorias",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "options": {
-      "validateUpsert": true
+  "name": "categorias",
+  "plural": "categorias",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "codigo": {
+      "type": "string",
+      "required": true
     },
-    "properties": {
-      "codigo": {
-        "type": "string",
-        "required": true
-      },
-      "nombre": {
-        "type": "string",
-        "required": true
-      },
-      "apellido": {
-        "type": "string",
-        "required": true
-      },
-      "fechanacimiento": {
-        "type": "date",
-        "required": true
-      },
-      "celular": {
-        "type": "string",
-        "required": true
-      },
-      "talla": {
-        "type": "number",
-        "required": true
-      },
-      "productos": {
-        "type": "string",
-        "required": false
-      }
+    "nombre": {
+      "type": "string",
+      "required": true
     },
-    "validations": [],
-    "relations": {},
-    "acls": [],
-    "methods": {}
-  }
-  
+    "apellido": {
+      "type": "string",
+      "required": true
+    },
+    "fechanacimiento": {
+      "type": "string",
+      "required": true
+    },
+    "celular": {
+      "type": "string",
+      "required": true
+    },
+    "talla": {
+      "type": "number",
+      "required": true
+    },
+    "productos": {
+      "type": "string",
+      "required": true
+    },
+    "id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

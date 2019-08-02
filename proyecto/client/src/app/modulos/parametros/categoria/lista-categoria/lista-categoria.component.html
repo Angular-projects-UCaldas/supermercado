@@ -19,7 +19,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ng for="let c of listaCategoria">
+        <tr *ngFor="let c of listaCategoria">
             <td>
                 {{c.codigo}}
             </td>
@@ -30,10 +30,22 @@
                 {{c.productos}}
             </td>
             <td>
+                <a class="waves-effect waves-light btn blue">
+                    <i class="material-icons left">edit</i>Editar</a>
 
             </td>
             <td>
-
+                <a *ngIf='!showConfirmationButtons; else deleteConfirmationTemplate'
+                    (click)="ChangeConfirmationButtons(c.id)" class="waves-effect waves-light btn red">
+                    <i class="material-icons left">delete</i>Borrar</a>
+                <ng-template #deleteConfirmationTemplate>
+                    <div *ngIf="idToShowButtons == c.id">
+                        <a class="waves-effect waves-light btn green" (click)="deleteCategory({{c.id}})">
+                            <i class="material-icons left">save</i>Confirmar</a>&nbsp;
+                        <a (click)="ChangeConfirmationButtons('')" class="waves-effect waves-light btn red">
+                            <i class="material-icons left">cancel</i>Cancelar</a>
+                    </div>
+                </ng-template>
             </td>
         </tr>
     </tbody>
