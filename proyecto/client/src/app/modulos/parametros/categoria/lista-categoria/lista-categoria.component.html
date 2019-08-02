@@ -40,7 +40,7 @@
                     <i class="material-icons left">delete</i>Borrar</a>
                 <ng-template #deleteConfirmationTemplate>
                     <div *ngIf="idToShowButtons == c.id">
-                        <a class="waves-effect waves-light btn green" (click)="deleteCategory({{c.id}})">
+                        <a class="waves-effect waves-light btn green" (click)="deleteCategory(c.id)">
                             <i class="material-icons left">save</i>Confirmar</a>&nbsp;
                         <a (click)="ChangeConfirmationButtons('')" class="waves-effect waves-light btn red">
                             <i class="material-icons left">cancel</i>Cancelar</a>
