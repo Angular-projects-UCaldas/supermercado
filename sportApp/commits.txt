@@ -1,0 +1,72 @@
+commit 5689880aab3c0873dd6302fe843dd6815c06653b
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Fri Aug 2 17:22:31 2019 -0500
+
+    base
+
+commit 5a2b31313480f6f0ead49a2b9b2dde82f0751e60
+Merge: 2aeff8c cc70e07
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Fri Aug 2 17:08:19 2019 -0500
+
+    solucionado
+
+commit 2aeff8cb3f61155c480c285f5624a8e0201f87bb
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Fri Aug 2 16:50:57 2019 -0500
+
+    categorias
+
+commit 06b1709c2bae00eac0a98d197c329e7c98442c2d
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Wed Jul 24 23:19:02 2019 -0500
+
+    categorias
+
+commit cc70e07ad8da14163bb6a6442d770bca9a9e5925
+Author: lucasBMax <49489906+lucasBMax@users.noreply.github.com>
+Date:   Tue Jul 16 17:51:25 2019 -0500
+
+    Delete README.md
+
+commit fc3480de7f1e79268526a93c3db6579ad809ee02
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Tue Jul 16 17:50:48 2019 -0500
+
+    productos
+
+commit 20ed9e37727d0d39349f6e93bf3a9918913d5f56
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Mon Jul 15 23:14:58 2019 -0500
+
+    Remove duplicated directory
+
+commit 4824c421831a9ac5ad69698c47cc107244d4396a
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Mon Jul 15 18:07:56 2019 -0500
+
+    codigo super5
+
+commit 73a9e58658acf5d785fa97f2eade69c6a707c383
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Mon Jul 15 15:13:41 2019 -0500
+
+    codigo super4
+
+commit 51edc5cb97ee7e07646e08b82ade615ea9e2f7bf
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Mon Jul 15 07:13:08 2019 -0500
+
+    codigo super3
+
+commit 027a7903dfa6dcfe833f93415e44dea831410490
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Sun Jul 14 23:53:55 2019 -0500
+
+    codigo super2
+
+commit e3269875a230806444d2c699ed498699fbc2eb0d
+Author: lucasBMax <lucas.1701716343@gmail.com>
+Date:   Sun Jul 14 19:58:24 2019 -0500
+
+    codigo super
