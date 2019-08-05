@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { ParametrosRoutingModule } from './parametros-routing.module';
 import { ListaCategoriaComponent } from './categoria/lista-categoria/lista-categoria.component';
@@ -11,7 +12,8 @@ import { EditarCategoriaComponent } from './categoria/editar-categoria/editar-ca
   declarations: [ListaCategoriaComponent, CrearCategoriaComponent, EditarCategoriaComponent],
   imports: [
     CommonModule,
-    ParametrosRoutingModule
+    ParametrosRoutingModule, 
+    FormsModule,
   ], 
   exports: [
     ListaCategoriaComponent,
