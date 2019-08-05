@@ -2,9 +2,8 @@ export interface CategoriaModel{
     codigo: string,
     nombre: string,
     apellido: string,
-    fechanacimiento: Date,
+    fechanacimiento: string,
     celular: string,
     talla: number,
-    productos: string,
-    id: string
+    productos: string
 }

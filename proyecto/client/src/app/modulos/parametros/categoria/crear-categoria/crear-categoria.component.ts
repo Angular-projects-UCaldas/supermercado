@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CategoriaModel } from 'src/app/modelos/categoria.model';
 import { CategoriaService } from 'src/app/servicios/categoria.service';
 import { Router } from '@angular/router';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { FormGroup, FormControl, Validators  } from '@angular/forms';
 
 @Component({
   selector: 'app-crear-categoria',
@@ -57,12 +57,11 @@ export class CrearCategoriaComponent implements OnInit {
     let categoria: CategoriaModel = {
       codigo: this.codigo.value,
       nombre: this.nombre.value,
-      apellido: null,
-      fechanacimiento: null,
-      celular: null,
-      talla: null,
-      id: null,
-      productos: this.productos.value
+      apellido: "000",
+      fechanacimiento: "000",
+      celular: "000",
+      talla: 10,
+      productos: this.productos.value,
     }
     return categoria;
   }
