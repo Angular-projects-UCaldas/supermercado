@@ -15,7 +15,7 @@ const routes: Routes = [
     component: CrearCategoriaComponent
   },
   {
-    path: 'admin/categoria/editar',
+    path: 'admin/categoria/editar/:id',
     component: EditarCategoriaComponent
   }
 ];

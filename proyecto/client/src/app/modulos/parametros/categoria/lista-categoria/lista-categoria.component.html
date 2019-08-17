@@ -34,7 +34,7 @@
                 {{c.productos}}
             </td>
             <td>
-                <a class="waves-effect waves-light btn blue">
+                <a class="waves-effect waves-light btn blue" routerLink="/admin/categoria/editar/{{c.id}}">
                     <i class="material-icons left">edit</i>Editar</a>
 
             </td>
@@ -46,7 +46,7 @@
                     <div *ngIf="idToShowButtons == c.id">
                         <a class="waves-effect waves-light btn green" (click)="deleteCategory(c.id)">
                             <i class="material-icons left">save</i>Confirmar</a>&nbsp;
-                        <a (click)="ChangeConfirmationButtons('')" class="waves-effect waves-light btn red">
+                        <a class="waves-effect waves-light btn red" (click)="ChangeConfirmationButtons('')">
                             <i class="material-icons left">cancel</i>Cancelar</a>
                     </div>
                 </ng-template>

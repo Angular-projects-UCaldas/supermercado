@@ -32,9 +32,9 @@ export class ListaCategoriaComponent implements OnInit {
   }
 
   deleteCategory(categoryID: string): void {
-    this.catService.deleteCategoria(categoryID).subscribe(item =>{
+    this.catService.deleteCategoria(categoryID).subscribe(item => {
       console.log(item);
-      this.route.navigate(['/admin/categoria/lista']);
+      this.getAllCategorias();
     });
   }
 }

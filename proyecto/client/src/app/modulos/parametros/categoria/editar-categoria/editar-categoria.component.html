@@ -1,1 +1,87 @@
-<p>editar-categoria works!</p>
+<div class="row">
+    <input [(ngModel)]="categoria.id" type="hidden" id="id" />
+    <div class="row">
+        <div class="input-fiel col s3">
+            <label class="active" for="code">Código</label>
+            <input [(ngModel)]="categoria.codigo" id="codigo" type="text" class="validate">
+        </div>
+        <div class="input-field col s9">
+            <label class="active" for="code">Nombre</label>
+            <input [(ngModel)]="categoria.nombre" id="nombre" type="text" class="validate">
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col s12">
+            <label class="active" for="code">Productos</label>
+            <input [(ngModel)]="categoria.productos" id="productos" type="text" class="validate">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <a class="waves-effect waves-light btn green" (click)="updateCategoria()">
+                <i class="material-icons right">save</i>
+                Actualizar
+            </a>
+        </div>
+    </div>
+</div>
+<!--<form [formGroup]="categoryFormGroup" (ngSubmit)="saveCategoria()">
+    <div class="row">
+        <input [(ngModel)]="categoria.id" type="hidden" id="id" />
+        <div class="row">
+            <div class="input-field col s3">
+                <input formControlName="codigo" id="codigo" type="text" class="validate">
+                <label for="codigo">Code</label>
+                <div class="errorContainer" *ngIf="(codigo.touched || codigo.dirty) && codigo.invalid">
+                    <div *ngIf="codigo.errors.required" class="card-panel orange">
+                        This field is required!
+                    </div>
+                    <div *ngIf="codigo.errors.minlength" class="card-panel orange">
+                        This field must be at least 3 characters long.
+                    </div>
+                    <div *ngIf="codigo.errors.maxlength" class="card-panel orange">
+                        This field must be maximum 10 characters long.
+                    </div>
+                </div>
+            </div>
+            <div class="input-field col s9">
+                <input formControlName="nombre" id="nombre" type="text" class="validate">
+                <label for="nombre">Name</label>
+                <div class="errorContainer" *ngIf="(nombre.touched || nombre.dirty) && nombre.invalid">
+                    <div *ngIf="nombre.errors.required" class="card-panel orange">
+                        This field is required!
+                    </div>
+                    <div *ngIf="nombre.errors.minlength" class="card-panel orange">
+                        This field must be at least 5 characters long.
+                    </div>
+                    <div *ngIf="nombre.errors.maxlength" class="card-panel orange">
+                        This field must be maximum 50 characters long.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input formControlName="productos" id="productos" type="text" class="validate">
+                <label for="productos">Description</label>
+                <div class="errorContainer" *ngIf="(productos.touched || productos.dirty) && productos.invalid">
+                    <div *ngIf="productos.errors.maxlength" class="card-panel orange">
+                        This field must be maximum 100 characters long.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <button class="btn green" type="submit" (click)="updateCategoria()">
+                    Actualizar
+                    <i class="material-icons right">edit</i>
+                </button>
+                &nbsp;&nbsp;
+                <a routerLink="/admin/categoria/list" class="waves-effect waves-light btn red">
+                    <i class="material-icons right">delete</i>
+                    Cancel</a>
+            </div>
+        </div>
+    </div>
+</form>-->

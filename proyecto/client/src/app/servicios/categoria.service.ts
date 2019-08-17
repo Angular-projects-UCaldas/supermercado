@@ -26,7 +26,7 @@ export class CategoriaService {
     });
   }
 
-  updateNewCategoria(categoria: CategoriaModel): Observable<CategoriaModel> {
+  updateCategoria(categoria: CategoriaModel): Observable<CategoriaModel> {
     return this.http.put<CategoriaModel>(`${base_url}categorias`, categoria, {
       headers: new HttpHeaders({
         "content-type": "application/json"
