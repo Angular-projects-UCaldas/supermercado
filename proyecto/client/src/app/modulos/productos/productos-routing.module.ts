@@ -5,20 +5,30 @@ import { CrearProductosComponent } from './admin/crear-productos/crear-productos
 import { EditarProductosComponent } from './admin/editar-productos/editar-productos.component';
 import { ProductoHomeComponent } from './producto-home/producto-home.component';
 import { ProductoDetalleComponent } from './producto-detalle/producto-detalle.component';
+import { UrlInjectionGuard } from 'src/app/guards/url-injection.guard';
 
 
 const routes: Routes = [
   {
     path: 'admin/productos/lista',
-    component: ListaProductosComponent
+    component: ListaProductosComponent,
+    canActivate: [
+      UrlInjectionGuard
+    ]
   },
   {
     path: 'admin/productos/crear',
-    component: CrearProductosComponent
+    component: CrearProductosComponent,
+    canActivate: [
+      UrlInjectionGuard
+    ]
   },
   {
     path: 'admin/productos/editar',
-    component: EditarProductosComponent
+    component: EditarProductosComponent,
+    canActivate: [
+      UrlInjectionGuard
+    ]
   },
   {
     path: 'producto/home',

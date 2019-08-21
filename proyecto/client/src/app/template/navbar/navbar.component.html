@@ -1,19 +1,22 @@
 <nav class="black">
-    <div class="nav-wrapper">&nbsp;&nbsp;&nbsp;&nbsp;
-      <a routerLink="/" class="brand-logo">Supermercado</a>
-      <a routerLink="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a routerLink="/usuario/login">Login</a></li>
-        <li><a routerLink="/usuario/logout">Logout</a></li>
-        <li><a routerLink="/admin/categoria/lista">Categoría</a></li>
-        <li><a routerLink="/admin/productos/lista">Producto</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="nav-wrapper">&nbsp;&nbsp;&nbsp;&nbsp;
+    <a routerLink="/" class="brand-logo">Supermercado</a>
+    <a routerLink="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    <ul class="right hide-on-med-and-down">
+      <li *ngIf="!userLogged"><a routerLink="/usuario/login">Login</a></li>
+      <li *ngIf="userLogged"><a routerLink="/usuario/logout">Logout</a></li>
+      <li *ngIf="userLogged"><a routerLink="/admin/categoria/lista">Categoría Admin</a></li>
+      <li *ngIf="userLogged"><a routerLink="/admin/productos/lista">Producto Admin</a></li>
+    </ul>
+  </div>
+  <div *ngIf="userLogged">
+    <strong>En sesión: {{completeName}}</strong>
+  </div>
+</nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a routerLink="/user/login">Login</a></li>
-    <li><a routerLink="/user/Logout">Logout</a></li>
-    <li><a routerLink="/admin/categoria/lista">Categoría</a></li>
-    <li><a routerLink="/admin/productos/lista">Producto</a></li>
-  </ul>
+<ul class="sidenav" id="mobile-demo">
+  <li><a routerLink="/user/login">Login</a></li>
+  <li><a routerLink="/user/Logout">Logout</a></li>
+  <li><a routerLink="/admin/categoria/lista">Categoría Admin</a></li>
+  <li><a routerLink="/admin/productos/lista">Producto Admin</a></li>
+</ul>
