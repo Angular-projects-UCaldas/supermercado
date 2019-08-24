@@ -50,5 +50,9 @@
   "Email": {
     "dataSource": "Email",
     "public": true
+  },
+  "containers": {
+    "dataSource": "UploadFiles",
+    "public": true
   }
 }

@@ -39,7 +39,7 @@ export class UsuarioService {
     localStorage.setItem("userTk", token);
   }
 
-  getToken(token) {
+  getToken() {
     return localStorage.getItem("userTk");
   }
 

@@ -22,10 +22,10 @@ export class LogoutComponent implements OnInit {
   logoutUser(): void {
     this.userService.logoutUser();
     this.router.navigate(["/home"]);
-  //   if (this.flag == true){
-  //     this.flag = false;
-  //     location.reload();
-  //  }
+    if (this.flag == true){
+      this.flag = false;
+      location.reload();
+   }
   }
 
 }

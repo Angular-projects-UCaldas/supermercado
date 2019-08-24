@@ -6,28 +6,28 @@
                 <label for="codigo">Code</label>
                 <div class="errorContainer" *ngIf="(codigo.touched || codigo.dirty) && codigo.invalid">
                     <div *ngIf="codigo.errors.required" class="card-panel orange">
-                        This field is required!
+                        Este campo es requerido!
                     </div>
                     <div *ngIf="codigo.errors.minlength" class="card-panel orange">
-                        This field must be at least 3 characters long.
+                        Este código debe contener mínimo 3 caracteres.
                     </div>
                     <div *ngIf="codigo.errors.maxlength" class="card-panel orange">
-                        This field must be maximum 10 characters long.
+                        Este código debe contener máximo 10 caracteres.
                     </div>
                 </div>
             </div>
             <div class="input-field col s9">
                 <input formControlName="nombre" id="nombre" type="text" class="validate">
-                <label for="nombre">Name</label>
+                <label for="nombre">Nombre</label>
                 <div class="errorContainer" *ngIf="(nombre.touched || nombre.dirty) && nombre.invalid">
                     <div *ngIf="nombre.errors.required" class="card-panel orange">
-                        This field is required!
+                        Este campo es requerido!
                     </div>
                     <div *ngIf="nombre.errors.minlength" class="card-panel orange">
-                        This field must be at least 5 characters long.
+                        Este código debe contener mínimo 5 caracteres.
                     </div>
                     <div *ngIf="nombre.errors.maxlength" class="card-panel orange">
-                        This field must be maximum 50 characters long.
+                        Este código debe contener máximo 10 caracteres.
                     </div>
                 </div>
             </div>
@@ -35,10 +35,10 @@
         <div class="row">
             <div class="input-field col s12">
                 <input formControlName="productos" id="productos" type="text" class="validate">
-                <label for="productos">Description</label>
+                <label for="productos">Productos</label>
                 <div class="errorContainer" *ngIf="(productos.touched || productos.dirty) && productos.invalid">
                     <div *ngIf="productos.errors.maxlength" class="card-panel orange">
-                        This field must be maximum 100 characters long.
+                        Este código debe contener máximo 100 caracteres.
                     </div>
                 </div>
             </div>

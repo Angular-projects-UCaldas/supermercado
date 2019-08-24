@@ -10,20 +10,26 @@
     "useNewUrlParser": true,
     "connector": "mongodb"
   },
-  "Email":{
+  "Email": {
     "name": "Email",
     "connector": "mail",
-    "transports":[
+    "transports": [
       {
         "type": "SMTP",
         "host": "smtp.gmail.com",
         "secure": true,
         "port": 465,
-        "auth":{
+        "auth": {
           "user": "testuser@email.com",
           "pass": "nyxbqgislxehkmjy"
         }
       }
     ]
+  },
+  "UploadFiles": {
+    "name": "UploadFiles",
+    "connector": "loopback-component-storage",
+    "provider": "fileSystem",
+    "root": "./server/files"
   }
 }

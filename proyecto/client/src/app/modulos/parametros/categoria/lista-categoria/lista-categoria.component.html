@@ -1,7 +1,8 @@
 <br />
-<a (click)="ChangeConfirmationButtons('')" class="waves-effect waves-light btn green" routerLink="/admin/categoria/crear">
+<a (click)="ChangeConfirmationButtons('')" class="waves-effect waves-light btn green"
+    routerLink="/admin/categoria/crear">
     <i class="material-icons left">add</i>Agregar nueva categoría</a>
-<br /> 
+<br />
 <table>
     <thead>
         <tr>
@@ -23,7 +24,7 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let c of listaCategoria">
+        <tr *ngFor="let c of listaCategoria | paginate: { itemsPerPage: 2, currentPage: cp, totalItems: total}">
             <td>
                 {{c.codigo}}
             </td>
@@ -54,3 +55,4 @@
         </tr>
     </tbody>
 </table>
+<pagination-controls (pageChange)="onPageChange($event)"></pagination-controls>

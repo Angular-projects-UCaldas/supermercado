@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { NgxPaginationModule } from 'ngx-pagination';
 import { ParametrosRoutingModule } from './parametros-routing.module';
 import { ListaCategoriaComponent } from './categoria/lista-categoria/lista-categoria.component';
 import { CrearCategoriaComponent } from './categoria/crear-categoria/crear-categoria.component';
@@ -15,6 +16,7 @@ import { EditarCategoriaComponent } from './categoria/editar-categoria/editar-ca
     ParametrosRoutingModule, 
     FormsModule,
     ReactiveFormsModule,
+    NgxPaginationModule
   ], 
   exports: [
     ListaCategoriaComponent,

@@ -9,7 +9,7 @@ import { UsuarioService } from 'src/app/servicios/usuario.service';
 export class LoginComponent implements OnInit {
 
   constructor(private usuarioServicio: UsuarioService) { }
-
+  flag: boolean = true;
   email: string = '';
   password: string = '';
 
@@ -21,6 +21,10 @@ export class LoginComponent implements OnInit {
       console.log(item);
       this.usuarioServicio.saveToken(item.id);
       this.usuarioServicio.saveUserInformation(item.user);
+      if (this.flag == true){
+        this.flag = false;
+        location.reload();
+      }
     });
   }
 }

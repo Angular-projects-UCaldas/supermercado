@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { CategoriaModel } from 'src/app/modelos/categoria.model';
 import { CategoriaService } from 'src/app/servicios/categoria.service';
 import { Router } from '@angular/router';
+import { NgxSpinnerService } from 'ngx-spinner';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-lista-categoria',
@@ -10,8 +12,11 @@ import { Router } from '@angular/router';
 })
 export class ListaCategoriaComponent implements OnInit {
 
-  constructor(private catService: CategoriaService, private route: Router) { }
+  constructor(private catService: CategoriaService, private route: Router, private spinner: NgxSpinnerService) { }
 
+
+  cp: number = 1;
+  total: number = 0;
   showConfirmationButtons: boolean = false;
   listaCategoria: CategoriaModel[] = [];
   idToShowButtons: string = '';
@@ -23,6 +28,7 @@ export class ListaCategoriaComponent implements OnInit {
     this.catService.getAllCategories().subscribe(items => {
       /*console.log(items)*/
       this.listaCategoria = items;
+      this.total = items.length;
     })
   }
 
@@ -36,5 +42,14 @@ export class ListaCategoriaComponent implements OnInit {
       console.log(item);
       this.getAllCategorias();
     });
+  }
+
+  onPageChange(event):void{
+     this.spinner.show();
+
+      this.cp = event;
+     setTimeout(() => {
+       this.spinner.hide();
+     }, 1000);
   }
 }
